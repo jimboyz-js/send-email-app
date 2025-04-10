@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/form.css?v=1.0">
+    <link rel="stylesheet" href="./css/popup.css?v=1.0">
+    <title>jimBoYz Ni ChOy</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <form id="email-form" enctype="multipart/form-data">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="fullname" placeholder="Your fullname..." required autocomplete="off">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="user-email" placeholder="Your email (example@mail.com)" required autocomplete="on">
+                <label for="subject">Subject</label>
+                <input type="text" name="subject" id="subject" placeholder="Subject" required autocomplete="off">
+                <label for="body">Message</label>
+                <textarea name="body" id="message" cols="30" rows="10" placeholder="Say something..." required></textarea>
+                <label for="file">Attachment (optional)</label>
+                <input type="file" name="file" id="file">
+                <input type="submit" value="Send">
+            </form>
+            <a href="/">Send message anonymously...</a>
+        </div>
+    </div>
+
+    <div class="popup-container" id="popup-msg-init">
+        <div class="popup" id="popup-msg">
+            <div class="img-container">
+                <img src="./images/check.ico" id="img" height="50px" alt="img">
+            </div>
+            <div class="message-container"><p class="msg" id="msg">Success...</p></div>
+            <button id="btn">OK</button>
+        </div>
+
+        <div class="popup" id="loading-popup">
+            <div class="img-container"><img src="./images/loading.gif" alt="loading"></div>
+            <div class="message-container"><p class="msg">Please wait...</p></div>
+        </div>
+    </div>
+    <script src="./script/script.js?v=1.0"></script>
+</body>
+</html>

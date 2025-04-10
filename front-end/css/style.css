@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../images/bg-jimboyz.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgb(26, 25, 25);
+}
+
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    max-width: 500px;
+    background-color: rgba(4, 5, 5, 0.5);
+    padding: 10px 10px;
+    border-radius: .80rem;
+    border: 2px solid rgb(30, 255, 0);
+    box-shadow: 0 0 10px rgb(13, 255, 25);
+    z-index: 100;
+}
+
+.container a {
+    text-align: center;
+    color: #eee;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: .4rem 0 .3rem;
+}
+
+.container a:visited {
+    color: #eee;
+}
+
+.container a:hover {
+    color: rgb(118, 118, 248);
+}
+
+input, label {
+    width: 100%;
+    cursor: pointer;
+    margin-top: .7rem;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #eee;
+}
+
+label {
+    cursor: default;
+}
+
+input[type="submit"] {
+    height: 2rem;
+    font-size: 1.2em;
+    transition: .5s ease-in-out;
+    border-radius: .5rem;
+    color: black;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(4, 255, 29);
+}
+
+input[type="file"] {
+    font-size: 1em;
+}
+
+textarea {
+    width: 100%;
+    resize: vertical;
+    height: 300px;
+    margin-top: .7rem;
+    font-size: 1.1em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    outline: none;
+    color: rgb(4, 255, 29);
+    border: 1px solid rgb(30, 255, 0);
+    box-shadow: 0 0 10px rgb(13, 255, 25);
+    background-color: rgba(4, 5, 5, 0.5);
+}

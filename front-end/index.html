@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css?v=1.0">
+    <link rel="stylesheet" href="./css/popup.css?v=1.0">
+    <title>Email</title>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="container">
+            <form id="email-form" enctype="multipart/form-data">
+                <label for="msgs">Message</label>
+                <textarea name="msgs" id="message" cols="30" rows="10" placeholder="Say something..." required></textarea>
+                <label for="send-file">Send file (Optional)</label>
+                <input id="file" type="file" name="send-file">
+                <input type="submit" value="Send">
+            </form>
+            <a href="/form.html">Send message with your email...</a>
+        </div>
+    </div>
+
+    <div class="popup-container" id="popup-msg-init">
+        <div class="popup" id="popup-msg">
+            <div class="img-container">
+                <img src="./images/check.ico" id="img" height="50px" alt="img">
+            </div>
+            <div class="message-container"><p class="msg" id="msg"></p></div>
+            <button id="btn">OK</button>
+        </div>
+        <div class="popup" id="loading-popup">
+            <div class="img-container"><img src="./images/loading.gif" alt="loading"></div>
+            <div class="message-container"><p class="msg">Please wait...</p></div>
+        </div>
+    </div>
+
+    <script src="./script/script-index.js?v=1.0"></script>
+</body>
+</html>
