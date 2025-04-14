@@ -44,9 +44,9 @@ This is a simple Node.js application that allows users to send emails with attac
 
 1. **Clone the repository**
    
-   git clone https://github.com/jimboyz-js/send-email.git
+   git clone https://github.com/jimboyz-js/send-email-app.git
    
-   cd send-email
+   cd send-email-app
 
 2. **Install dependencies**
 
@@ -60,7 +60,7 @@ This is a simple Node.js application that allows users to send emails with attac
 SMTP_HOST=smtp.example.com
 SMTP_PORT=465
 SECURE=true
-SERVICE=gmail
+SERVICE=mail
 EMAIL_USER=your-email@example.com
 EMAIL_PASS=your-email-password
 EMAIL_RECEIVER=your-email@example.com
